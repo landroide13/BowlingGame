@@ -1,26 +1,38 @@
+
 class BowlingGame:
+
+    """ 
+    Description:
+    Bowling Script App
+    """
 
     # Instance a new Frame(Game).
     def __init__(self):
-        """ Description:
+        """ 
+        Description:
         :type self: self intance
+        :return: nothing
         Instance the roll number.
         """    
         self.rolls=[]
 
     # Roll the bowling ball and set pins.
     def roll(self,pins):
-        """ Description:
-
+        """ 
+        Description:
         :type pins:number
         :param pins:number of pins
-    
+        
+        Settings pins.
         """
         self.rolls.append(pins)
 
     # Mark Score of the Frame(game).
     def score(self):
-        """ Description:
+        """ 
+        Description:
+        :type self: self intance
+        :return: frame Score.
 
         Keep track and mark
         score on frame.
@@ -41,7 +53,8 @@ class BowlingGame:
 
     # Strike the ten pins.
     def isStrike(self, rollIndex):
-        """ Description:
+        """ 
+        Description:
         :type rollIndex:number
         :param rollIndex:
 
@@ -51,7 +64,8 @@ class BowlingGame:
 
     # Dont strike all the pins.
     def isSpare(self, rollIndex):
-        """ Description:
+        """ 
+        Description:
         :type rollIndex:number
         :param rollIndex:
     
@@ -61,7 +75,8 @@ class BowlingGame:
 
     # Strike score.    
     def stickeScore(self,rollIndex):
-        """ Description:
+        """ 
+        Description:
         :type rollIndex:number
         :param rollIndex:
     
@@ -71,7 +86,8 @@ class BowlingGame:
 
     # Score of missed Pins.
     def spareScore(self,rollIndex):
-        """ Description:
+        """ 
+        Description:
         :type rollIndex:number
         :param rollIndex: 
         
@@ -81,8 +97,9 @@ class BowlingGame:
 
     # Strike Score through the Frame(game).
     def frameScore(self, rollIndex):
-        """ Description:
-         :type rollIndex:number
+        """ 
+        Description:
+        :type rollIndex:number
         :param rollIndex: 
     
         Return total score of the frame.

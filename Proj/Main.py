@@ -40,7 +40,6 @@ class TestBowlingGame(unittest.TestCase):
 
     def rollMany(self, pins,rolls):
         for i in range(rolls):
-            #self.game.rolls[i]
             self.game.rolls[pins]
 
 
